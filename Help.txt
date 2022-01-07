@@ -1,0 +1,46 @@
+1.for mysql creation
+npm init  for package.json
+npm install mysql
+npm install bluebird
+npm install express
+npm install nodemon
+
+"start":"nodemon filenamewithextension",
+
+for connection of mysql
+	const mysql = require("mysql");
+	const Promise = require("bluebird");
+	Promise.promisifyAll(require("mysql/lib/Connection").prototype);
+
+const dbinfo = {
+  host: "localhost",
+  user: "WebTech",
+  password: "cdac",
+  database: "project2",
+};
+
+
+2.for API creation
+install cors package=> npm install cors
+npm start=>for nodemon
+
+	const express = require("express");
+	let app = express();
+	app.use(express.json());
+	const cors = require("cors");
+	app.use(cors());
+ 
+
+3.react project
+-npm start
+-open terminal + sign and install below link
+npm install react-bootstrap bootstrap@5.1.3
+
+-paste css link in to index.js
+link=>import 'bootstrap/dist/css/bootstrap.min.css';
+
+-install axios method
+link=>npm install axios
+and import axios at the time of post
+
+
